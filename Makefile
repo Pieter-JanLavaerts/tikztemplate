@@ -1,10 +1,10 @@
-all: tikztest.tex diagram-1.png
+all: tikztemplate.tex diagram-1.png
 
-tikztest.pdf: tikztest.tex
-	xelatex tikztest.tex
+tikztemplate.pdf: tikztemplate.tex
+	xelatex tikztemplate.tex
 
-diagram-1.png: tikztest.pdf
-	pdftoppm tikztest.pdf diagram -png
+diagram-1.png: tikztemplate.pdf
+	pdftoppm tikztemplate.pdf diagram -png
 
 view: diagram-1.png
 	feh diagram-1.png
